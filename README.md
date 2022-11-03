@@ -36,9 +36,9 @@ To generate the CHIP-0007 compatible JSON files, run the following command in th
 ./script.js
 ```
 
-It will prompt you to enter the CSV filename you want to generate JSON files and file hashes from
-
-
+It will prompt you to enter the CSV filename you want to generate JSON files and file hashes from.
 Type in `all-teams.json` as your filename and press Enter/Return
+
+![terminal-prompt-for-cli](/path/to/image.png "terminal-prompt-for-cli")
 
 > Note: The `all-teams.json` file is already provided for you in the codebase for ease of use as it contains the data needed to run the script.
