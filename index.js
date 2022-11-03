@@ -2,7 +2,7 @@ const fs = require('fs')
 const path = require('path')
 const { parse } = require('csv-parse')
 const { stringify } = require('csv-stringify')
-const outputCSV = './csv/output.csv'
+const outputCSV = './csv/all-teams.output.csv'
 const createJSONSha256Hash = require('./hash')
 
 
