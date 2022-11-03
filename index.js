@@ -20,8 +20,7 @@ const columns = ['Serial Number', 'Filename', 'UUID', 'SHA256 JSON Hash']
 const stringifier = stringify({ header: true, columns: columns }).setMaxListeners(0)
 
 function generateJSONAndCSVOutput(csvFileName) {
-    console.log(csvFileName)
-    fs.createReadStream(`./csv/${csvFileName}`)
+  fs.createReadStream(`./csv/${csvFileName}`)
   .pipe(parse({ delimiter: ',', from_line: 2 }))
   .on('data', (row) => {
     let data = fs.readFileSync('example.json')
