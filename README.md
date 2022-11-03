@@ -22,12 +22,6 @@ cd i9-sha256-json
 npm install
 ```
 
-## Running Locally
-
-```bash
-npm run dev
-```
-
 ## How it works
 
 To generate the CHIP-0007 compatible JSON files, run the following command in the terminal
