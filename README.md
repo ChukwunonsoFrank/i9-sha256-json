@@ -35,4 +35,4 @@ Type in `all-teams.json` as your filename and press Enter/Return
 
 ![terminal-prompt-for-cli](https://github.com/ChukwunonsoFrank/i9-sha256-json/blob/main/terminal-prompt.jpg "terminal-prompt-for-cli")
 
-> Note: The `all-teams.json` file is already provided for you in the codebase for ease of use as it contains the data needed to run the script.
+> Note: The `all-teams.csv` file is already provided for you in the codebase for ease of use as it contains the data needed to run the script.
