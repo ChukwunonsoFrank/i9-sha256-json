@@ -24,7 +24,7 @@ rl.on('line', (line) => {
       console.log(
         `Successfully generated SHA256 JSON Hash and CSV output at: ${path.join(
           __dirname,
-          './csv/output.csv'
+          './csv/all-teams.output.csv'
         )}`
       )
       break
