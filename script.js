@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+const fs = require('fs')
 const main = require('./index')
 const readline = require('readline')
 const path = require('path')
@@ -18,15 +19,15 @@ rl.on('line', (line) => {
       rl.close()
       break
     default:
-      sentence = line
-      main(sentence)
-      //   rl.close()
+      fs.readFileSync(path.join(__dirname, 'csv', `${line}`), 'utf8')
+      main(line)
       console.log(
-        `Successfully generated SHA256 JSON Hash and CSV output at: ${path.join(
+        `✔ Successfully generated SHA256 JSON Hash and CSV output at: ${path.join(
           __dirname,
           './csv/all-teams.output.csv'
         )}`
       )
+      rl.close()
       break
   }
 })
